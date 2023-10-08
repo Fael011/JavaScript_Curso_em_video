@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="t">Inciando etudos em DOM</h1>
+    <p>aqui vai o resultaddo</p>
+    <p>aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">clique aki</div>
+    <div class="msg2">sla</div>
+
+    <script>
+        var p1 = document.getElementsByTagName("p")[0]
+        var p2 = document.getElementsByTagName("p")[1]
+        var corpo = document.body
+        var d = document.getElementById("msg")
+
+        document.write(p2.innerHTML)
+        alert(p1.innerText)
+
+        corpo.style.color = "#fff"
+        corpo.style.background ="black"
+        p1.style.color = "blue"
+        d.style.color = "red"
+        
+
+        d.innerHTML = "Estou conseguindo"
+        //window.document.getElementById("msg").innerText = "mds, o de cima é melhor"
+    </script>
+</body>
+</html>
